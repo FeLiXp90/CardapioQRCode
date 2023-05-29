@@ -1,39 +1,34 @@
-# TRABALHO 01:  Título do Trabalho
-Trabalho desenvolvido durante a disciplina de BD1
-
 # Sumário
+
+# TRABALHO 01:  CARDÁPIO QR CODE
+Trabalho desenvolvido durante a disciplina de BD1
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
-...<br>
+João Victor Ferrareis Ribeiro: joaovito2002@hotmail.com<br>
+Renzo Fraga Loureiro Marinho: renzofraga49@gmail.com<br>
+Perseu Fernandes Machado de Oliveira: perseu.fmo@gmail.com<br>
+Felipe Becalli Trindade: felipebecallitrindade@gmail.com<br>
+
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
-<br>e motivação da escolha realizada. <br>
 
-> A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
+Com os avanços e facilidades do momento decidimos inovar e introduzir nosso restaurante ao novo mundo 4.0. Ao introduzir um sistema de QR CODE, nosso objetivo inicial seria melhorar o atendimento a pedidos e organização a prioridades nas tarefas da cozinha. Esperamos sempre nos qualificar e dar um upgrade para sempre encher sua barriga com felicidade.
  
 
-### 3.MINI-MUNDO<br>
+### 3 ) Minimundo do sistema proposto
 
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar) <br>
-Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente  real)<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
-
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes. 
+O restaurante possuirá nome e  código de identificação. Este terá duas classes de usuário - o Admin e o Cliente - , além de outras duas entidades que servirão de ferramenta para as operações. O Cardápio(Itens e Categorias) e os QR codes de cada mesa. A Tela de Login será a mesma para todas as duas classes de usuário, mas dependendo do seu login e senha porém serão direcionadas baseado nas credenciais e o aplicativo identificará a classe dirigindo o usuário para telas diferentes.  Haverá apenas um Admin por restaurante. Este poderá criar ou destruir QR codes, assim como alterar a mesa que é associada a cada um dos QR codes. O Admin também poderá modificar o cardápio, alterando, removendo ou adicionando pratos e categorias.  A Cozinha será apenas uma por restaurante. Esta possuirá um computador que recebe pedidos e os entrega às respectivas mesas.  Existem vários clientes para cada restaurante, e para cada 1 QR Code. Este QR Code analisa o cardápio e retorna várias opções para o cliente fazer o pedido. Após o pagamento, o QR Code anexa ao pedido o número da mesa e envia o pedido para a cozinha.
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
-#### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
+#### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
 
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
+[https://github.com/FeLiXp90/CardapioQRCode/blob/main/balsamiq.png](https://github.com/FeLiXp90/CardapioQRCode/blob/main/balsamiq.png)/<br>
+
+![Alt text](https://github.com/FeLiXp90/CardapioQRCode/blob/main/balsamiq.png "Balsamiq")
+
+![PROTOTIPAÇÃO - SISTEMA DE CARDÁPIO QR CODE.pdf](https://github.com/FeLiXp90/CardapioQRCode/blob/main/arquivos/Prototipacao.pdf)
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
@@ -56,23 +51,17 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     
     
 ### 5.MODELO CONCEITUAL<br>
-    A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
-    B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 3 e o Máximo 5.
-        * informe quais são as 3 principais entidades do sistema em densenvolvimento<br>(se houverem mais de 3 entidades, pense na importância da entidade para o sistema)       
-    C) Principais fluxos de informação/entidades do sistema (mínimo 3). <br>Dica: normalmente estes fluxos estão associados as tabelas que conterão maior quantidade de dados 
-    D) Qualidade e Clareza
-        Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas (Aplicar os conceitos de normalização abordados).   
-        
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
+            
+!["Modelo Conceitual"](https://github.com/FeLiXp90/CardapioQRCode/blob/main/imagens/conceitual.png)
     
     
         
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo Richard]: [Micaely]
+    Deveria ser feita uma mudança na associação de ADMIN com ITEM e CATEGORIA, onde esses precisariam estar ligado ao RESTAURANTE e não ao ADMIN.
+    
+    [Grupo 02]: [Integrantes que avaliaram]
 
 #### 5.2 Descrição dos dados 
     [objeto]: [descrição do objeto]
@@ -93,15 +82,132 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+
+DROP TABLE IF EXISTS CLIENTE;<br>
+CREATE TABLE CLIENTE(<br>
+CODIGO     			int,<br>
+NOME       			VARCHAR(45),<br>
+TELEFONE   			VARCHAR(45),<br>
+EMAIL      			VARCHAR(45)<br>
+);<br>
 
 
-### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
+DROP TABLE IF EXISTS PEDIDO;<br>
+CREATE TABLE PEDIDO(<br>
+CODIGO     			int,<br>
+DATA_HORA  			timestamp,<br>
+STATUS     			VARCHAR(45),<br>
+FK_CLIENTE_COD		int,<br>
+FK_MESA_COD			int<br>
+);<br>
+
+DROP TABLE IF EXISTS PEDIDO_ITEM;<br>
+CREATE TABLE PEDIDO_ITEM(<br>
+FK_PEDIDO_COD		int,<br>
+FK_ITEM_COD			int,<br>
+QUANTIDADE			int<br>
+);<br>
+
+DROP TABLE IF EXISTS ITEM;<br>
+CREATE TABLE ITEM(<br>
+CODIGO     			int,<br>
+NOME				VARCHAR(45),<br>
+DESCRICAO			VARCHAR(45),<br>
+PRECO				real<br>
+);<br>
+
+DROP TABLE IF EXISTS MESA;<br>
+CREATE TABLE MESA(<br>
+CODIGO				int,<br>
+COD_QR_CODE			VARCHAR(45)<br>
+);<br>
+
+DROP TABLE IF EXISTS ADMIN;<br>
+CREATE TABLE ADMIN(<br>
+CODIGO				int,<br>
+NOME_RESTAURANTE	VARCHAR(45),<br>
+LOGIN				VARCHAR(45),<br>
+SENHA				VARCHAR(45)<br>
+);<br>
+
+DROP TABLE IF EXISTS CATEGORIA;<br>
+CREATE TABLE CATEGORIA(<br>
+CODIGO				int,<br>
+NOME				VARCHAR(45)<br>
+);<br>
+
+DROP TABLE IF EXISTS ITEM_CATEGORIA;<br>
+CREATE TABLE ITEM_CATEGORIA(<br>
+FK_ITEM_COD			int,<br>
+FK_CATEGORIA_COD	int<br>
+);<br>
+
+INSERT INTO CLIENTE(CODIGO,NOME,TELEFONE,EMAIL) VALUES<br>
+(1,'Wagner Moura','98765-4321','wagnermoura@gmail.com'),<br>
+(2,'Gabriel Pensador','23456-7800','gabriel@gmail.com'),<br>
+(3,'Romeu Banhos','21345-6789','romeu@gmail.com'),<br>
+(4,'Eliseu Faria','32145-6789','eliseu@gmail.com'),<br>
+(5,'Bartolomeu Bragança','12345-6789','bartolomeu@gmail.com'),<br>
+(6,'Carlos Roberto','54312-6789','carlos@gmail.com');<br>
+
+INSERT INTO PEDIDO(CODIGO,DATA_HORA,STATUS,FK_CLIENTE_COD,FK_MESA_COD) VALUES<br>
+(1,'11/04/2023 16:03:00 -3:00','Entregue',2,2),<br>
+(2,'11/04/2023 16:10:00 -3:00','Entregue',1,3),<br>
+(3,'11/04/2023 16:11:00 -3:00','Entregue',5,1),<br>
+(4,'11/04/2023 16:15:00 -3:00','Preparando...',4,5),<br>
+(5,'11/04/2023 16:20:00 -3:00','Preparando...',6,4),<br>
+(6,'11/04/2023 16:23:00 -3:00','Preparando...',3,6);<br>
+
+INSERT INTO PEDIDO_ITEM(FK_PEDIDO_COD,FK_ITEM_COD,QUANTIDADE) VALUES<br>
+(1,2,1),<br>
+(1,6,2),<br>
+(2,3,1),<br>
+(3,1,1),<br>
+(4,6,2),<br>
+(5,5,2),<br>
+(6,4,3);<br>
+
+INSERT INTO ITEM(CODIGO,NOME,DESCRICAO,PRECO) VALUES<br>
+(1,'Coraçãozinho','200g de coração de galinha',10.00),<br>
+(2,'Picanha','200g de picanha',12.00),<br>
+(3,'Alcatra','200g de alcatra',11.00),<br>
+(4,'Pão de Alho','1 Pão de Alho',8.50),<br>
+(5,'Coca 2L','1 Coca cola 2L',12.00),<br>
+(6,'Cerveja Brahma','Lata de Brahma',3.00);<br>
+
+INSERT INTO MESA(CODIGO,COD_QR_CODE) VALUES<br>
+(1,'/cardapio/mesa=1'),<br>
+(2,'/cardapio/mesa=2'),<br>
+(3,'/cardapio/mesa=3'),<br>
+(4,'/cardapio/mesa=4'),<br>
+(5,'/cardapio/mesa=5'),<br>
+(6,'/cardapio/mesa=6');<br>
+
+INSERT INTO ADMIN(CODIGO,NOME_RESTAURANTE,LOGIN,SENHA) VALUES<br>
+(1,'Rei da Picanha','Admin_Luiz','Flamengo123');<br>
+
+INSERT INTO CATEGORIA(CODIGO,NOME) VALUES<br><br>
+(1,'Carnes'),<br>
+(2,'Petiscos'),<br>
+(3,'Bebidas');<br>
+
+INSERT INTO ITEM_CATEGORIA(FK_ITEM_COD,FK_CATEGORIA_COD) VALUES<br>
+(1,1),<br>
+(2,1),<br>
+(3,1),<br>
+(4,2),<br>
+(5,3),<br>
+(6,3);<br>
+
+# BACKUP: DROP, CREATE e INSERT
+Está no Colaboratório no Tópico 9.
+<br>
+![Arquivo Backup](https://github.com/FeLiXp90/CardapioQRCode/blob/main/arquivos/pgpyaahu.2023-05-23T18_51_06%2B00_00.sql.lzo "backup.sql - Cardápio QR Code")
+
+The backups are compressed with lzop, to restore run: lzop -cd "$FILENAME" | psql "$DATABASE_NAME" . Or click "Restore" on any of the backups below.
+<br>
+### 9	TABELAS E PRINCIPAIS CONSULTAS
+    Link para o colaboratório do trabalho: https://colab.research.google.com/drive/1kYHZTWgSQqFBIL3jeicpZtVbrdSAZ7c_#scrollTo=YyfRJjVdkClY
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
@@ -156,7 +262,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ># Marco de Entrega 03: Itens 10 e 11<br>
 <br>
 <br>
-<br> 
+
 
 
 

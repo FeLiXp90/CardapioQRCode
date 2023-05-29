@@ -24,7 +24,7 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)
 
 
-[https://github.com/FeLiXp90/CardapioQRCode/blob/main/balsamiq.png](https://github.com/FeLiXp90/CardapioQRCode/blob/main/balsamiq.png)/<br>
+[https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/balsamiq.png](https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/balsamiq.png)/<br>
 
 ![Alt text](https://github.com/FeLiXp90/CardapioQRCode/blob/main/balsamiq.png "Balsamiq")
 
@@ -52,7 +52,7 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
     
 ### 5.MODELO CONCEITUAL<br>
             
-!["Modelo Conceitual"](https://github.com/FeLiXp90/CardapioQRCode/blob/main/imagens/conceitual.png)
+!["Modelo Conceitual"](https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/conceitual.png)
     
     
         

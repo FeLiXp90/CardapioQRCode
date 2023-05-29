@@ -202,7 +202,7 @@ INSERT INTO ITEM_CATEGORIA(FK_ITEM_COD,FK_CATEGORIA_COD) VALUES<br>
 # BACKUP: DROP, CREATE e INSERT
 Está no Colaboratório no Tópico 9.
 <br>
-![Arquivo Backup](https://github.com/FeLiXp90/CardapioQRCode/blob/main/arquivos/pgpyaahu.2023-05-23T18_51_06%2B00_00.sql.lzo "backup.sql - Cardápio QR Code")
+![Arquivo Backup](https://github.com/FeLiXp90/CardapioQRCode/blob/master/arquivos/pgpyaahu.2023-05-23T18_51_06%2B00_00.sql.lzo "backup.sql - Cardápio QR Code")
 
 The backups are compressed with lzop, to restore run: lzop -cd "$FILENAME" | psql "$DATABASE_NAME" . Or click "Restore" on any of the backups below.
 <br>

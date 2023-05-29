@@ -26,9 +26,9 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
 
 [https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/balsamiq.png](https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/balsamiq.png)/<br>
 
-![Alt text](https://github.com/FeLiXp90/CardapioQRCode/blob/main/balsamiq.png "Balsamiq")
+![Alt text](https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/balsamiq.png "Página ADMIN")
 
-![PROTOTIPAÇÃO - SISTEMA DE CARDÁPIO QR CODE.pdf](https://github.com/FeLiXp90/CardapioQRCode/blob/main/arquivos/Prototipacao.pdf)
+![PROTOTIPAÇÃO - SISTEMA DE CARDÁPIO QR CODE.pdf](https://github.com/FeLiXp90/CardapioQRCode/blob/master/arquivos/PrototipacaoCardapioQRCode.pdf)
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!

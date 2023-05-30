@@ -52,7 +52,7 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
     
 ### 5.MODELO CONCEITUAL<br>
             
-!["Modelo Conceitual"](https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/conceitual.png)
+!["Modelo Conceitual"](https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/conceitual.png "Modelo Lógico")
     
     
         
@@ -72,7 +72,7 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
 
 
 ### 6	MODELO LÓGICO<br>
-        ![Modelo Lógico](https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/ModeloLogicoDoCardapioCorrigdo.png)
+![Modelo Lógico](https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/ModeloLogicoDoCardapioCorrigdo.png "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 

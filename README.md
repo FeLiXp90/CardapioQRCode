@@ -75,8 +75,56 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
 ![Modelo Lógico](https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/ModeloLogicoDoCardapioCorrigdo.png "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
+CREATE TABLE CLIENTE(<br>
+CODIGO     			int,<br>
+NOME       			VARCHAR(45),<br>
+TELEFONE   			VARCHAR(45),<br>
+EMAIL      			VARCHAR(45)<br>
+);<br>
+
+
+CREATE TABLE PEDIDO(<br>
+CODIGO     			int,<br>
+DATA_HORA  			timestamp,<br>
+STATUS     			VARCHAR(45),<br>
+FK_CLIENTE_COD		int,<br>
+FK_MESA_COD			int<br>
+);<br>
+
+CREATE TABLE PEDIDO_ITEM(<br>
+FK_PEDIDO_COD		int,<br>
+FK_ITEM_COD			int,<br>
+QUANTIDADE			int<br>
+);<br>
+
+CREATE TABLE ITEM(<br>
+CODIGO     			int,<br>
+NOME				VARCHAR(45),<br>
+DESCRICAO			VARCHAR(45),<br>
+PRECO				real<br>
+);<br>
+
+CREATE TABLE MESA(<br>
+CODIGO				int,<br>
+COD_QR_CODE			VARCHAR(45)<br>
+);<br>
+
+CREATE TABLE ADMIN(<br>
+CODIGO				int,<br>
+NOME_RESTAURANTE	VARCHAR(45),<br>
+LOGIN				VARCHAR(45),<br>
+SENHA				VARCHAR(45)<br>
+);<br>
+
+CREATE TABLE CATEGORIA(<br>
+CODIGO				int,<br>
+NOME				VARCHAR(45)<br>
+);<br>
+
+CREATE TABLE ITEM_CATEGORIA(<br>
+FK_ITEM_COD			int,<br>
+FK_CATEGORIA_COD	int<br>
+);<br>
         
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>

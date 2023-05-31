@@ -65,13 +65,13 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
 
 #### 5.2 Descrição dos dados 
  
-ITEM: É um prato que está associado a uma categoria e faz parte do cardápio do Restaurante.
-CATEGORIA: É uma categoria de pratos que está associado a vários itens. _ex: refrigerantes, pizzas, hamburguers, etc._
-QR CODE: Está associado a uma mesa e redireciona o cliente ao cardápio.
-PEDIDO: É um registro de compra feito pelo cliente ao efetuar o pagamento dos itens selecionados no cardápio.
-CLIENTE: É um cliente que fez pagamento no restaurante.
-MESA: É uma mesa do restaurante que está associado a um QR Code e aos clientes.
-ADMIN: É o dono do restaurante que gerencia o cardápio do seu empreendimento e faz controle das mesas.
+ITEM: É um prato que está associado a uma categoria e faz parte do cardápio do Restaurante.<br>
+CATEGORIA: É uma categoria de pratos que está associado a vários itens. _ex: refrigerantes, pizzas, hamburguers, etc._<br>
+QR CODE: Está associado a uma mesa e redireciona o cliente ao cardápio.<br>
+PEDIDO: É um registro de compra feito pelo cliente ao efetuar o pagamento dos itens selecionados no cardápio.<br>
+CLIENTE: É um cliente que fez pagamento no restaurante.<br>
+MESA: É uma mesa do restaurante que está associado a um QR Code e aos clientes.<br>
+ADMIN: É o dono do restaurante que gerencia o cardápio do seu empreendimento e faz controle das mesas.<br>
 
 
 

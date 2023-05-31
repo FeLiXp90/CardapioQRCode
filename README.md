@@ -64,11 +64,15 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
     [Grupo 02]: [Integrantes que avaliaram]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+ 
+ITEM: É um prato que está associado a uma categoria e faz parte do cardápio do Restaurante.
+CATEGORIA: É uma categoria de pratos que está associado a vários itens. _ex: refrigerantes, pizzas, hamburguers, etc._
+QR CODE: Está associado a uma mesa e redireciona o cliente ao cardápio.
+PEDIDO: É um registro de compra feito pelo cliente ao efetuar o pagamento dos itens selecionados no cardápio.
+CLIENTE: É um cliente que fez pagamento no restaurante.
+MESA: É uma mesa do restaurante que está associado a um QR Code e aos clientes.
+ADMIN: É o dono do restaurante que gerencia o cardápio do seu empreendimento e faz controle das mesas.
+
 
 
 ### 6	MODELO LÓGICO<br>

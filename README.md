@@ -252,8 +252,10 @@ Está no Colaboratório no Tópico 9.
 
 The backups are compressed with lzop, to restore run: lzop -cd "$FILENAME" | psql "$DATABASE_NAME" . Or click "Restore" on any of the backups below.
 <br>
-### 9	TABELAS E PRINCIPAIS CONSULTAS
-    Link para o colaboratório do trabalho: https://colab.research.google.com/drive/1kYHZTWgSQqFBIL3jeicpZtVbrdSAZ7c_#scrollTo=YyfRJjVdkClY
+### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
+
+    Link para o colaboratório do trabalho: https://colab.research.google.com/drive/1kYHZTWgSQqFBIL3jeicpZtVbrdSAZ7c_#scrollTo=6QFjfiOLWl1n<br>
+    
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>

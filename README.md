@@ -41,11 +41,9 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
    * Relatório de cliente com nome do cliente relacionando com o codigo do pedido e a mesa, e ordenada os item_pedidos com o status em "aguardando" ou "entregue. Serve para fazer verificação dos itens que ainda estão aguardando para serem feitos e entregues pela cozinha.
  
  
-    #### 4.3 TABELA DE DADOS DO SISTEMA:
-    a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
-    b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
+ #### 4.3 TABELA DE DADOS DO SISTEMA:
     
-    ![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
+ ![Tabela Modelo Logico](https://github.com/FeLiXp90/CardapioQRCode/blob/master/arquivos/Tabelas%20Exemplo%20Modelo%20L%C3%B3gico.xlsx) "Tabela - Cardápio QR Code")
     
     
 ### 5.MODELO CONCEITUAL<br>

@@ -43,7 +43,8 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
  
  #### 4.3 TABELAS DE DADOS DO SISTEMA:
     
- ![Tabela Modelo Logico](https://github.com/FeLiXp90/CardapioQRCode/blob/master/arquivos/Tabelas%20Exemplo%20Modelo%20L%C3%B3gico.xlsx) "Tabela - Cardápio QR Code")
+ ![Tabela Modelo Logico](https://github.com/FeLiXp90/CardapioQRCode/blob/master/arquivos/Tabelas%20Exemplo%20Modelo%20L%C3%B3gico%20(2).xlsx) "Tabela - Cardápio QR Code")
+ Link: https://docs.google.com/spreadsheets/d/1n-Mo7cHK3E_brFU1ScfYX4t0fWqM9vOJ039CIgLGFXo/edit#gid=0
  
     
 ### 5.MODELO CONCEITUAL<br>

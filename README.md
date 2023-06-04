@@ -57,10 +57,11 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
 #### 5.1 Validação do Modelo Conceitual
     [Grupo Richard]: [Micaely]
     Deveria ser feita uma mudança na associação de ADMIN com ITEM e CATEGORIA, onde esses precisariam estar ligado ao RESTAURANTE e não ao ADMIN.
-    A gente não gostaria porque a gente não quer.
+    A gente não fez a mudança porque não há restrição de existência (drop em cascata) se a chave estrangeira do admin fosse salva ali. Isso não faz tanto sentido e nem diferença quando vai para o modelo lógico.
     
-    [Grupo 02]: [Integrantes que avaliaram]
-    [ACATAR OU NÃO? Por que?]
+    [Grupo Fernanda]: [Fernanda Jaimara]
+    Sugeriu mudanças visuais no modelo, tais como: Restaurante deveria estar acima ou no mesmo nível que mesa, restaurante deve estar acima ou no mesmo nível que admin, Admin deve estar no mesmo nível ou superior a item. Também sugeriu a mudança: QR code vira atributo de mesa.
+    
 
 #### 5.2 Descrição dos dados 
  

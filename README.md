@@ -61,7 +61,7 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
     
     [Grupo Fernanda]: [Fernanda Jaimara]
     Sugeriu mudanças visuais no modelo, tais como: Restaurante deveria estar acima ou no mesmo nível que mesa, restaurante deve estar acima ou no mesmo nível que admin, Admin deve estar no mesmo nível ou superior a item. Também sugeriu a mudança: QR code vira atributo de mesa.
-    
+    A mudança do QR Code virar atributo não achamos válida, pois o QR pode estar instanciado a várias mesas. Quanto à questão visual e de leitura, não achamos que faça real diferença, especialmente porque o que dará entendimento do sistema é a descrição do mini-mundo.
 
 #### 5.2 Descrição dos dados 
  

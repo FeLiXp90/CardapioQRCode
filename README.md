@@ -43,7 +43,7 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
  
  #### 4.3 TABELAS DE DADOS DO SISTEMA:
     
- ![Tabela Modelo Logico](https://github.com/FeLiXp90/CardapioQRCode/blob/master/arquivos/Tabelas%20Exemplo%20Modelo%20L%C3%B3gico%20(2).xlsx) "Tabela - Cardápio QR Code")
+ ![Tabela Modelo Logico](https://github.com/FeLiXp90/CardapioQRCode/blob/master/arquivos/Tabelas%20Exemplo%20Modelo%20L%C3%B3gico%20(2).xlsx) "Tabela - Cardápio QR Code")<br>
  Link: https://docs.google.com/spreadsheets/d/1n-Mo7cHK3E_brFU1ScfYX4t0fWqM9vOJ039CIgLGFXo/edit#gid=0
  
     
@@ -57,7 +57,7 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
 #### 5.1 Validação do Modelo Conceitual
     [Grupo Richard]: [Micaely]
     Deveria ser feita uma mudança na associação de ADMIN com ITEM e CATEGORIA, onde esses precisariam estar ligado ao RESTAURANTE e não ao ADMIN.
-    
+    A gente não gostaria porque a gente não quer.
     
     [Grupo 02]: [Integrantes que avaliaram]
     [ACATAR OU NÃO? Por que?]
@@ -78,6 +78,8 @@ ADMIN: É o dono do restaurante que gerencia o cardápio do seu empreendimento e
 ![Modelo Lógico](https://github.com/FeLiXp90/CardapioQRCode/blob/master/imagens/ModeloLogicoDoCardapioCorrigdo.png "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
+
+Tabela cliente:<br>
 CREATE TABLE CLIENTE(<br>
 CODIGO     			int,<br>
 NOME       			VARCHAR(45),<br>
@@ -85,7 +87,7 @@ TELEFONE   			VARCHAR(45),<br>
 EMAIL      			VARCHAR(45)<br>
 );<br>
 
-
+Tabela pedido:<br>
 CREATE TABLE PEDIDO(<br>
 CODIGO     			int,<br>
 DATA_HORA  			timestamp,<br>
@@ -94,12 +96,14 @@ FK_CLIENTE_COD		int,<br>
 FK_MESA_COD			int<br>
 );<br>
 
+Tabela pedido_item:
 CREATE TABLE PEDIDO_ITEM(<br>
 FK_PEDIDO_COD		int,<br>
 FK_ITEM_COD			int,<br>
 QUANTIDADE			int<br>
 );<br>
 
+Tabela item:<br>
 CREATE TABLE ITEM(<br>
 CODIGO     			int,<br>
 NOME				VARCHAR(45),<br>
@@ -107,11 +111,13 @@ DESCRICAO			VARCHAR(45),<br>
 PRECO				real<br>
 );<br>
 
+Tabela mesa:<br>
 CREATE TABLE MESA(<br>
 CODIGO				int,<br>
 COD_QR_CODE			VARCHAR(45)<br>
 );<br>
 
+Tabela admin:<br>
 CREATE TABLE ADMIN(<br>
 CODIGO				int,<br>
 NOME_RESTAURANTE	VARCHAR(45),<br>
@@ -119,11 +125,13 @@ LOGIN				VARCHAR(45),<br>
 SENHA				VARCHAR(45)<br>
 );<br>
 
+Tabela categoria:<br>
 CREATE TABLE CATEGORIA(<br>
 CODIGO				int,<br>
 NOME				VARCHAR(45)<br>
 );<br>
 
+Tabela item_categoria:<br>
 CREATE TABLE ITEM_CATEGORIA(<br>
 FK_ITEM_COD			int,<br>
 FK_CATEGORIA_COD	int<br>
@@ -255,10 +263,10 @@ Está no Colaboratório no Tópico 9.<br>
 The backups are compressed with lzop, to restore run: lzop -cd "$FILENAME" | psql "$DATABASE_NAME" .<br>
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-
-Link para o colaboratório do trabalho: https://colab.research.google.com/drive/1kYHZTWgSQqFBIL3jeicpZtVbrdSAZ7c_#scrollTo=6QFjfiOLWl1n<br>
     
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+
+Link para o colaboratório do trabalho: https://colab.research.google.com/drive/1kYHZTWgSQqFBIL3jeicpZtVbrdSAZ7c_#scrollTo=6QFjfiOLWl1n<br>
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 

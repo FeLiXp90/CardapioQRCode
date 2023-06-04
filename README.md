@@ -54,14 +54,16 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
     
         
     
-#### 5.1 Validação do Modelo Conceitual
-    [Grupo Richard]: [Micaely]
-    Deveria ser feita uma mudança na associação de ADMIN com ITEM e CATEGORIA, onde esses precisariam estar ligado ao RESTAURANTE e não ao ADMIN.
-    A gente não fez a mudança porque não há restrição de existência (drop em cascata) se a chave estrangeira do admin fosse salva ali. Isso não faz tanto sentido e nem diferença quando vai para o modelo lógico.
+#### 5.1 Validação do Modelo Conceitual<br>
+   
+   [Grupo Richard] : [Micaely] <br>
+   Deveria ser feita uma mudança na associação de ADMIN com ITEM e CATEGORIA, onde esses precisariam estar ligado ao RESTAURANTE e não ao ADMIN.<br>
+   A gente não fez a mudança porque não há restrição de existência (drop em cascata) se a chave estrangeira do admin fosse salva ali. Isso não faz tanto sentido e nem diferença quando vai para o modelo lógico.<br>
     
-    [Grupo Fernanda]: [Fernanda Jaimara]
-    Sugeriu mudanças visuais no modelo, tais como: Restaurante deveria estar acima ou no mesmo nível que mesa, restaurante deve estar acima ou no mesmo nível que admin, Admin deve estar no mesmo nível ou superior a item. Também sugeriu a mudança: QR code vira atributo de mesa.
-    A mudança do QR Code virar atributo não achamos válida, pois o QR pode estar instanciado a várias mesas. Quanto à questão visual e de leitura, não achamos que faça real diferença, especialmente porque o que dará entendimento do sistema é a descrição do mini-mundo.
+   [Grupo Fernanda] : [Fernanda Jaimara]<br>
+    Sugeriu mudanças visuais no modelo, tais como: Restaurante deveria estar acima ou no mesmo nível que mesa, restaurante deve estar acima ou no mesmo nível que admin, Admin deve estar no mesmo nível ou superior a item.<br> 
+    Também sugeriu a mudança: QR code vira atributo de mesa.<br>
+    A mudança do QR Code virar atributo não achamos válida, pois o QR pode estar instanciado a várias mesas. Quanto à questão visual e de leitura, não achamos que faça real diferença, especialmente porque o que dará entendimento do sistema é a descrição do mini-mundo.<br>
 
 #### 5.2 Descrição dos dados 
  

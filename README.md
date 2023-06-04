@@ -13,7 +13,7 @@ Felipe Becalli Trindade: felipebecallitrindade@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 
-Com os avanços e facilidades do momento decidimos inovar e introduzir nosso restaurante ao novo mundo 4.0. Ao introduzir um sistema de QR CODE, nosso objetivo inicial seria melhorar o atendimento a pedidos e organização a prioridades nas tarefas da cozinha. Esperamos sempre nos qualificar e dar um upgrade para sempre encher sua barriga com felicidade.
+Com os avanços e facilidades do momento decidimos inovar e introduzir nosso restaurante ao novo mundo 4.0. Aqui, acreditamos que a experiência gastronômica deve ser mais do que apenas sabores excepcionais, deve ser uma fusão de criatividade, comodidade e interatividade. Ao adotar o cardápio QR Code, proporcionamos aos nossos clientes uma maneira rápida, fácil e segura de explorar nossas opções gastronômicas, ao mesmo tempo em que oferecemos uma experiência aprimorada que atende às necessidades dos tempos atuais, onde o sistema de QR Code foi cuidadosamente implementado com o objetivo inicial de aprimorar o atendimento a pedidos e otimizar a organização das tarefas na cozinha.
  
 
 ### 3 ) Minimundo do sistema proposto

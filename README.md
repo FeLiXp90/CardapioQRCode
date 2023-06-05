@@ -208,7 +208,11 @@ INSERT INTO CLIENTE(CODIGO,NOME,TELEFONE,EMAIL) VALUES<br>
 (3,'Romeu Banhos','21345-6789','romeu@gmail.com'),<br>
 (4,'Eliseu Faria','32145-6789','eliseu@gmail.com'),<br>
 (5,'Bartolomeu Bragança','12345-6789','bartolomeu@gmail.com'),<br>
-(6,'Carlos Roberto','54312-6789','carlos@gmail.com');<br>
+(6,'Carlos Roberto','54312-6789','carlos@gmail.com'),<br>
+(7,'João Luiz','13258-1234','joaoluiz@gmail.com'),<br>
+(8,'Hannah Montanna','40028-9220','hannymtn@gmail.com'),<br>
+(9,'Perseu Fraga','98760-1234','perseufmofraga@gmail.com'),<br>
+(10,'Felipe Ferrareis','13114-1234','ferrareisfbt@gmail.com');<br>
 
 INSERT INTO PEDIDO(CODIGO,DATA_HORA,STATUS,FK_CLIENTE_COD,FK_MESA_COD) VALUES<br>
 (1,'11/04/2023 16:03:00 -3:00','Entregue',2,2),<br>
@@ -216,7 +220,12 @@ INSERT INTO PEDIDO(CODIGO,DATA_HORA,STATUS,FK_CLIENTE_COD,FK_MESA_COD) VALUES<br
 (3,'11/04/2023 16:11:00 -3:00','Entregue',5,1),<br>
 (4,'11/04/2023 16:15:00 -3:00','Preparando...',4,5),<br>
 (5,'11/04/2023 16:20:00 -3:00','Preparando...',6,4),<br>
-(6,'11/04/2023 16:23:00 -3:00','Preparando...',3,6);<br>
+(6,'11/04/2023 16:23:00 -3:00','Preparando...',3,6),<br>
+(7,'12/04/2023 16:20:00 -3:00','Preparando...',7,4),<br>
+(8,'12/05/2023 16:23:00 -3:00','Entregue',8,6),<br>
+(9,'12/06/2023 16:20:00 -3:00','Preparando...',10,4),<br>
+(10,'12/07/2023 16:23:00 -3:00','Entregue',9,6);<br>
+
 
 INSERT INTO PEDIDO_ITEM(FK_PEDIDO_COD,FK_ITEM_COD,QUANTIDADE) VALUES<br>
 (1,2,1),<br>
@@ -225,7 +234,11 @@ INSERT INTO PEDIDO_ITEM(FK_PEDIDO_COD,FK_ITEM_COD,QUANTIDADE) VALUES<br>
 (3,1,1),<br>
 (4,6,2),<br>
 (5,5,2),<br>
-(6,4,3);<br>
+(6,4,3),<br>
+(7,5,2),<br>
+(8,4,3),<br>
+(9,5,2),<br>
+(10,4,3);<br>
 
 INSERT INTO ITEM(CODIGO,NOME,DESCRICAO,PRECO) VALUES<br>
 (1,'Coraçãozinho','200g de coração de galinha',10.00),<br>
@@ -233,7 +246,11 @@ INSERT INTO ITEM(CODIGO,NOME,DESCRICAO,PRECO) VALUES<br>
 (3,'Alcatra','200g de alcatra',11.00),<br>
 (4,'Pão de Alho','1 Pão de Alho',8.50),<br>
 (5,'Coca 2L','1 Coca cola 2L',12.00),<br>
-(6,'Cerveja Brahma','Lata de Brahma',3.00);<br>
+(6,'Cerveja Brahma','Lata de Brahma',3.00),<br>
+(7,'Dollynho','1 Dollynho 1L',4.00),<br>
+(8,'Cerveja Heineken','Garrafa de Heineken 600ml',12.00),<br>
+(9,'Pepsi','1 Pepsi 2L',8.00),<br>
+(10,'Cerveja Skol','Lata de Skol',5.00);<br>
 
 INSERT INTO MESA(CODIGO,COD_QR_CODE) VALUES<br>
 (1,'/cardapio/mesa=1'),<br>
@@ -241,7 +258,12 @@ INSERT INTO MESA(CODIGO,COD_QR_CODE) VALUES<br>
 (3,'/cardapio/mesa=3'),<br>
 (4,'/cardapio/mesa=4'),<br>
 (5,'/cardapio/mesa=5'),<br>
-(6,'/cardapio/mesa=6');<br>
+(6,'/cardapio/mesa=6'),<br>
+(7,'/cardapio/mesa=7'),<br>
+(8,'/cardapio/mesa=8'),<br>
+(9,'/cardapio/mesa=9'),<br>
+(10,'/cardapio/mesa=10'),<br>
+(11,'/cardapio/mesa=11');<br>
 
 INSERT INTO ADMIN(CODIGO,NOME_RESTAURANTE,LOGIN,SENHA) VALUES<br>
 (1,'Rei da Picanha','Admin_Luiz','Flamengo123');<br>
@@ -249,7 +271,14 @@ INSERT INTO ADMIN(CODIGO,NOME_RESTAURANTE,LOGIN,SENHA) VALUES<br>
 INSERT INTO CATEGORIA(CODIGO,NOME) VALUES<br><br>
 (1,'Carnes'),<br>
 (2,'Petiscos'),<br>
-(3,'Bebidas');<br>
+(3,'Bebidas'),<br>
+(4,'Sanduiches'),<br>
+(5,'Massas'),<br>
+(6,'Doces'),<br>
+(7,'Sorvetes'),<br>
+(8,'Mexicana'),<br>
+(9,'Vegana'),<br>
+(10,'Gourmet');<br>
 
 INSERT INTO ITEM_CATEGORIA(FK_ITEM_COD,FK_CATEGORIA_COD) VALUES<br>
 (1,1),<br>
@@ -257,7 +286,11 @@ INSERT INTO ITEM_CATEGORIA(FK_ITEM_COD,FK_CATEGORIA_COD) VALUES<br>
 (3,1),<br>
 (4,2),<br>
 (5,3),<br>
-(6,3);<br>
+(6,3),<br>
+(7,3),<br>
+(8,3),<br>
+(9,3),<br>
+(10,3);<br>
 
 # BACKUP: DROP, CREATE e INSERT<br>
 Está no Colaboratório no Tópico 9.<br>

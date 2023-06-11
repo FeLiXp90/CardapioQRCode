@@ -313,8 +313,23 @@ Link para o colaboratório do trabalho: https://colab.research.google.com/drive/
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-    a) Criar outras 5 consultas que envolvam like ou ilike
-    b) Criar uma consulta para cada tipo de função data apresentada.
+    SELECT * FROM CLIENTE AS C WHERE C.NOME LIKE 'J%';<br>
+    SELECT * FROM ITEM AS I WHERE I.NOME LIKE 'C%';<br>
+    SELECT * FROM CATEGORIA AS C WHERE C.NOME LIKE '%es';<br>
+    SELECT C.NOME, C.TELEFONE FROM CLIENTE AS C WHERE C.NOME ILIKE '%b%';<br>
+    SELECT * FROM CATEGORIA AS C WHERE C.NOME ILIKE '%c%';<br>
+    SELECT CURRENT_DATE, DATA_HORA ,STATUS FROM PEDIDO AS P;<br>
+    SELECT CURRENT_TIME,DATA_HORA,STATUS FROM PEDIDO AS P;<br>
+    SELECT NOW(),DATA_HORA,STATUS FROM PEDIDO AS P;<br>
+    SELECT AGE(CURRENT_DATE,DATA_HORA) AS "Tempo do pedido",STATUS FROM PEDIDO AS P;<br>
+    SELECT DATE_PART('MONTH',AGE(CURRENT_DATE,DATA_HORA)),STATUS FROM PEDIDO AS P;<br>
+    SELECT DATE_PART('YEAR',AGE(CURRENT_DATE,DATA_HORA)),STATUS FROM PEDIDO AS P;<br>
+    SELECT EXTRACT('MONTH' FROM DATA_HORA),STATUS FROM PEDIDO AS P;<br>
+    
+    SELECT C.NOME, EXTRACT('MONTH' FROM DATA_HORA) AS "Ano do pedido", STATUS<br> 
+    FROM PEDIDO AS P <br>
+    INNER JOIN CLIENTE AS C ON (C.CODIGO = P.FK_CLIENTE_COD)<br>
+    WHERE P.STATUS LIKE '%Entrege%';<br>
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão

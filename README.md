@@ -309,7 +309,47 @@ Link para o colaboratório do trabalho: https://colab.research.google.com/drive/
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
+    
+    SELECT * FROM PEDIDO WHERE status = 'Preparando...' AND fk_mesa_cod = '4';
+    
+    SELECT QUANTIDADE FROM PEDIDO_ITEM WHERE fk_item_cod = '5' AND fk_pedido_cod = '5';
+    
+    SELECT * FROM CATEGORIA
+    JOIN Item_categoria
+    on categoria.codigo=fk_CATEGORIA_cod
+    JOIN item
+    on item.codigo=fk_CATEGORIA_cod
+    WHERE categoria.NOME='Carnes' AND NOT fk_item_cod = '1';
+    
+    SELECT cliente.nome as nome_cliente,pedido.status,item.nome
+    FROM CLIENTE cliente
+    JOIN PEDIDO pedido
+    ON cliente.codigo=pedido.fk_cliente_cod
+    JOIN PEDIDO_ITEM pedido_item
+    ON pedido.fk_cliente_cod=pedido_item.fk_pedido_cod
+    JOIN ITEM item
+    ON pedido_item.fk_ITEM_cod=item.codigo
+    WHERE cliente.nome='Hugo Chavez' AND item.nome = 'Picanha';
+    
+    SELECT * FROM PEDIDO WHERE data_hora > '2023-12-01' OR STATUS = 'Preparando...';
+    
+     b) Criar no mínimo 3 consultas com operadores aritméticos 
+    
+    SELECT * FROM ITEM WHERE preco * 1.2 > 10;
+    
+    SELECT NOME
+    FROM ITEM
+    INNER JOIN PEDIDO_ITEM ON ITEM.codigo = PEDIDO_ITEM.fk_item_cod
+    WHERE quantidade * preco > 12
+    GROUP BY ITEM.nome;
+    
+    SELECT NOME,SUM(preco)
+    FROM ITEM
+    INNER JOIN PEDIDO_ITEM ON ITEM.codigo = PEDIDO_ITEM.fk_item_cod
+    WHERE (quantidade * preco) / 2 < 10
+    GROUP BY ITEM.nome;
+    
+    
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>

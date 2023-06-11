@@ -351,6 +351,14 @@ Link para o colaboratório do trabalho: https://colab.research.google.com/drive/
     
     
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+    
+    SELECT C.NOME AS ALCUNHA FROM CLIENTE AS C WHERE C.NOME LIKE 'F%';
+    SELECT I.NOME AS PRODUTO, I.PRECO AS CUSTA 
+    FROM ITEM AS I 
+    WHERE I.PRECO IS NOT NULL AND I.PRECO <> 0 
+    ORDER BY CUSTA ASC;
+
+    SELECT DATA_HORA AS DATE FROM PEDIDO ORDER BY DATE DESC;
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     SELECT * FROM CLIENTE AS C WHERE C.NOME LIKE 'J%';

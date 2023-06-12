@@ -511,7 +511,12 @@ Todas as seguintes consultas apresentadas estão no colab apresentado.
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
      a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
      
-     Self Joins são bons para associar duas linhas de uma mesma tabela onde uma faz alusão a outra. (Por exemplo, em uma Tabela Pessoas, onde tem Pais e filhos, usaria-se um Self Join para agrupar os pais e os filhos em uma mesma linha, como no nosso trabalho não tem nenhuma tabela com esse tipo de relação onde uma linha faz referencia a outra da mesma tabela, a junção self join então será substituida por uma View.
+    Self Joins são bons para associar duas linhas de uma mesma tabela onde uma faz alusão a outra.
+    (Por exemplo, em uma Tabela Pessoas, onde tem Pais e filhos, usaria-se um Self Join para agrupar
+    os pais e os filhos em uma mesma linha, como no nosso trabalho não tem nenhuma tabela com esse
+    tipo de relação onde uma linha faz referencia a outra da mesma tabela, a junção self join então
+    será substituida por uma View.
+    
         
     CREATE VIEW View1 AS
     SELECT cliente.nome as nome_cliente,pedido.status,item.nome

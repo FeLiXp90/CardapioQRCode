@@ -307,6 +307,28 @@ Link para o colaboratório do trabalho: https://colab.research.google.com/drive/
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+
+    SELECT * FROM PEDIDO WHERE status = 'Preparando...';
+    
+    SELECT * FROM pedido where fk_mesa_cod=1;
+    
+    SELECT cliente.nome as nome_cliente,pedido.status,item.nome
+    FROM CLIENTE cliente
+    JOIN PEDIDO pedido
+    ON cliente.codigo=pedido.fk_cliente_cod
+    JOIN PEDIDO_ITEM pedido_item
+    ON pedido.fk_cliente_cod=pedido_item.fk_pedido_cod
+    JOIN ITEM item
+    ON pedido_item.fk_ITEM_cod=item.codigo
+    where cliente.nome='Wagner Moura';
+    
+    SELECT * FROM CATEGORIA
+    JOIN Item_categoria
+    on categoria.codigo=fk_CATEGORIA_cod
+    JOIN item
+    on item.codigo=fk_CATEGORIA_cod
+    WHERE categoria.NOME='Carnes';
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     

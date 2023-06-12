@@ -532,6 +532,8 @@ Todas as seguintes consultas apresentadas estão no colab apresentado.
     on item.codigo=fk_CATEGORIA_cod
     WHERE categoria.NOME='Carnes';
     
+    b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+    
     CREATE VIEW View3 AS
     SELECT cliente.nome,data_hora,status,fk_mesa_cod as mesa,quantidade,item.nome as item
     FROM CLIENTE cliente
@@ -553,17 +555,6 @@ Todas as seguintes consultas apresentadas estão no colab apresentado.
         ELSE 2
     END;
         
-    b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
-        
-    Create View View4 AS
-    SELECT * FROM cliente
-    SELECT * FROM pedido
-    SELECT * FROM mesa
-    SELECT * FROM admin
-    SELECT * FROM categoria
-    SELECT * FROM item_categoria
-    SELECT * FROM item
-    SELECT * FROM pedido_item
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
      a) Criar minimo 1 envolvendo GROUP BY

@@ -489,10 +489,79 @@ Link para o colaboratório do trabalho: https://colab.research.google.com/drive/
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
+    
+    SELECT * 
+    FROM cliente LEFT JOIN pedido 
+    ON pedido.fk_cliente_cod = cliente.codigo;
+
+    SELECT * 
+    FROM pedido RIGHT JOIN cliente
+    ON pedido.fk_cliente_cod = cliente.codigo;
+
+    SELECT * 
+    FROM pedido FULL JOIN cliente
+    ON pedido.fk_cliente_cod = cliente.codigo;
+
+    SELECT * 
+    FROM mesa FULL JOIN pedido
+    ON pedido.fk_mesa_cod = mesa.codigo;
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-        a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+     a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
+     
+     Self Joins são bons para associar duas linhas de uma mesma tabela onde uma faz alusão a outra. (Por exemplo, em uma Tabela Pessoas, onde tem Pais e filhos, usaria-se um Self Join para agrupar os pais e os filhos em uma mesma linha, como no nosso trabalho não tem nenhuma tabela com esse tipo de relação onde uma linha faz referencia a outra da mesma tabela, a junção self join então será substituida por uma View.
+        
+    CREATE VIEW View1 AS
+    SELECT cliente.nome as nome_cliente,pedido.status,item.nome
+    FROM CLIENTE cliente
+    JOIN PEDIDO pedido
+    ON cliente.codigo=pedido.fk_cliente_cod
+    JOIN PEDIDO_ITEM pedido_item
+    ON pedido.fk_cliente_cod=pedido_item.fk_pedido_cod
+    JOIN ITEM item
+    ON pedido_item.fk_ITEM_cod=item.codigo
+    where cliente.nome='Wagner Moura';
+    
+    CREATE VIEW View2 AS
+    SELECT * FROM CATEGORIA
+    JOIN Item_categoria
+    on categoria.codigo=fk_CATEGORIA_cod
+    JOIN item
+    on item.codigo=fk_CATEGORIA_cod
+    WHERE categoria.NOME='Carnes';
+    
+    CREATE VIEW View3 AS
+    SELECT cliente.nome,data_hora,status,fk_mesa_cod as mesa,quantidade,item.nome as item
+    FROM CLIENTE cliente
+    JOIN PEDIDO pedido
+    ON cliente.codigo=pedido.fk_cliente_cod
+    
+    JOIN MESA mesa
+    ON pedido.fk_mesa_cod=mesa.codigo
+
+    JOIN PEDIDO_ITEM pedido_item
+    ON pedido_item.fk_pedido_cod=pedido.codigo
+
+    JOIN ITEM item
+    ON item.codigo=pedido_item.fk_item_cod
+
+    ORDER BY CASE
+        WHEN status = 'Preparando...' THEN 0
+        WHEN status = 'Entregue' THEN 1
+        ELSE 2
+    END;
+        
+    b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+        
+    Create View View4 AS
+    SELECT * FROM cliente
+    SELECT * FROM pedido
+    SELECT * FROM mesa
+    SELECT * FROM admin
+    SELECT * FROM categoria
+    SELECT * FROM item_categoria
+    SELECT * FROM item
+    SELECT * FROM pedido_item
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
      a) Criar minimo 1 envolvendo GROUP BY

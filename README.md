@@ -562,8 +562,24 @@ Todas as seguintes consultas apresentadas estão no colab apresentado.
         
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
-     a) Criar minimo 1 envolvendo GROUP BY
-     b) Criar minimo 1 envolvendo algum tipo de junção
+    a) Criar minimo 1 envolvendo GROUP BY
+     
+    SELECT nome, total_pedidos
+    FROM CLIENTE
+    JOIN (
+    SELECT FK_CLIENTE_COD, COUNT(*) AS total_pedidos
+    FROM PEDIDO
+    GROUP BY FK_CLIENTE_COD
+    ) SUBC
+    ON CLIENTE.CODIGO = SUBC.FK_CLIENTE_COD;
+
+    b) Criar minimo 1 envolvendo algum tipo de junção
+     
+    SELECT PEDIDO.CODIGO AS pedido_codigo, PEDIDO.data_hora, ITEM.nome AS item_nome, PEDIDO_ITEM.quantidade
+    FROM PEDIDO
+    JOIN PEDIDO_ITEM ON PEDIDO.codigo = PEDIDO_ITEM.fk_pedido_cod
+    JOIN ITEM ON PEDIDO_ITEM.fk_item_cod = ITEM.codigo
+    WHERE PEDIDO.fk_cliente_cod = (SELECT codigo FROM cliente WHERE nome = 'Gabriel Pensador');
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 

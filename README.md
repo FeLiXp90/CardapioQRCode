@@ -304,6 +304,8 @@ The backups are compressed with lzop, to restore run: lzop -cd "$FILENAME" | psq
 
 Link para o colaboratório do trabalho: https://colab.research.google.com/drive/1kYHZTWgSQqFBIL3jeicpZtVbrdSAZ7c_#scrollTo=6QFjfiOLWl1n<br>
 
+Todas as seguintes consultas apresentadas estão no colab apresentado.
+
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
@@ -479,13 +481,13 @@ Link para o colaboratório do trabalho: https://colab.research.google.com/drive/
     END;
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-   SELECT FK_ITEM_COD FROM PEDIDO_ITEM GROUP BY FK_ITEM_COD;
+    SELECT FK_ITEM_COD FROM PEDIDO_ITEM GROUP BY FK_ITEM_COD;
  
-  SELECT FK_PEDIDO_COD FROM PEDIDO_ITEM GROUP BY FK_PEDIDO_COD; 
+    SELECT FK_PEDIDO_COD FROM PEDIDO_ITEM GROUP BY FK_PEDIDO_COD; 
 
-  SELECT FK_ITEM_COD,COUNT(FK_ITEM_COD) AS QTD FROM PEDIDO_ITEM GROUP BY FK_ITEM_COD;
+    SELECT FK_ITEM_COD,COUNT(FK_ITEM_COD) AS QTD FROM PEDIDO_ITEM GROUP BY FK_ITEM_COD;
  
-  SELECT FK_PEDIDO_COD,COUNT(FK_PEDIDO_COD) AS QTD FROM PEDIDO_ITEM GROUP BY FK_PEDIDO_COD; 
+    SELECT FK_PEDIDO_COD,COUNT(FK_PEDIDO_COD) AS QTD FROM PEDIDO_ITEM GROUP BY FK_PEDIDO_COD; 
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo

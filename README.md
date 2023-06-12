@@ -413,8 +413,28 @@ Link para o colaboratório do trabalho: https://colab.research.google.com/drive/
     WHERE P.STATUS LIKE '%Entrege%';<br>
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-    a) Criar minimo 3 de exclusão
     b) Criar minimo 3 de atualização
+    
+    UPDATE CLIENTE
+    SET NOME = 'Hugo Chavez'
+    WHERE CODIGO = 1;
+    
+    UPDATE ADMIN
+    SET SENHA = 'PALMEIRASNAOTEMMUNDIAL'
+    WHERE CODIGO = 1;
+
+    UPDATE ITEM
+    SET DESCRICAO = '150g de coracao de galinha'
+    WHERE CODIGO = 1;
+    
+    a) Criar minimo 3 de exclusão
+    
+    DELETE FROM CLIENTE WHERE NOME = 'Hugo Chavez';
+    
+    DELETE FROM ITEM WHERE NOME = 'Picanha';
+    
+    DELETE FROM MESA WHERE CODIGO=1;
+    
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado

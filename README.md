@@ -438,7 +438,45 @@ Link para o colaboratório do trabalho: https://colab.research.google.com/drive/
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
+    
+    SELECT * 
+    FROM cliente INNER JOIN pedido 
+    ON pedido.fk_cliente_cod = cliente.codigo
+    INNER JOIN pedido_item
+    ON pedido.codigo=pedido_item.fk_pedido_cod
+    INNER JOIN item
+    ON pedido_item.fk_item_cod=item.codigo
+    INNER JOIN item_categoria
+    ON item_categoria.fk_item_cod=item.codigo
+    INNER JOIN categoria
+    ON categoria.codigo=fk_categoria_cod
+    INNER JOIN admin
+    ON admin.codigo=categoria.codigo
+    INNER JOIN mesa
+    ON pedido.fk_mesa_cod=mesa.codigo
+    ORDER BY cliente.telefone DESC;
+    
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+
+    SELECT cliente.nome,data_hora,status,fk_mesa_cod as mesa,quantidade,item.nome as item
+    FROM CLIENTE cliente
+    JOIN PEDIDO pedido
+    ON cliente.codigo=pedido.fk_cliente_cod
+
+    JOIN MESA mesa
+    ON pedido.fk_mesa_cod=mesa.codigo
+
+    JOIN PEDIDO_ITEM pedido_item
+    ON pedido_item.fk_pedido_cod=pedido.codigo
+
+    JOIN ITEM item
+    ON item.codigo=pedido_item.fk_item_cod
+
+    ORDER BY CASE
+        WHEN status = 'Preparando...' THEN 0
+        WHEN status = 'Entregue' THEN 1
+        ELSE 2
+    END;
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
    SELECT FK_ITEM_COD FROM PEDIDO_ITEM GROUP BY FK_ITEM_COD;

@@ -35,7 +35,7 @@ O restaurante possuirá nome e  código de identificação. Este terá duas clas
  > Cardápio QR Code precisa inicialmente dos seguintes relatórios:
 
    * Relatório que mostre a data de todas as compras durante um periodo. Serve para fazer um balanço, saber quais dias e horário tem muito movimento.<br>
-   * Relatório de moda dos itens vendidos, que serve para verificar quais produtos estão saindo mais e quais não estão sendo vendidos.<br>
+   * Relatório da moda dos itens vendidos, que serve para verificar quais produtos estão saindo mais e quais não estão sendo vendidos.<br>
    * Relatório do cardápio geral, com o nome dos itens e preço, ordenado pela categoria. Usado para criação do cardápio.<br>
    * Relatório de clientes com contagem associada a quantidade de compras mensalmente efetuada. Usada para identificar fidelidade e gerar descontos.<br>
    * Relatório de cliente com nome do cliente relacionando com o codigo do pedido e a mesa, e ordenada os item_pedidos com o status em "aguardando" ou "entregue. Serve para fazer verificação dos itens que ainda estão aguardando para serem feitos e entregues pela cozinha.

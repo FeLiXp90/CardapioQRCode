@@ -585,6 +585,7 @@ Todas as seguintes consultas apresentadas estão no colab apresentado.
 
 ### 10 RELATÓRIOS E GRÁFICOS
 
+Link para o Relatório: https://colab.research.google.com/drive/1Hw8XTTnYfMIBgMJ8zpPbGNqZ_pXkqrno?usp=sharing
 #### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.

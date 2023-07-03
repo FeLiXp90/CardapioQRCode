@@ -594,6 +594,8 @@ Link para o Relatório: https://colab.research.google.com/drive/1Hw8XTTnYfMIBgMJ
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
+Link para apresentação: https://youtu.be/tApqcwxXs90
+
 #### a) Modelo (pecha kucha)<br>
 #### b) Tempo de apresentação 6:40 
 
